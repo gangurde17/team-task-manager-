@@ -28,7 +28,7 @@ function Tasks() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/api/tasks",
+                "https://team-task-manager-production-a903.up.railway.app/api/tasks",
                 {
                     headers: {
                         authorization: token
@@ -64,7 +64,7 @@ function Tasks() {
             if (editId) {
 
                 await axios.put(
-                    `http://localhost:5000/api/tasks/${editId}`,
+                    `https://team-task-manager-production-a903.up.railway.app/api/tasks/${editId}`,
                     {
                         title,
                         description,
@@ -86,7 +86,7 @@ function Tasks() {
             else {
 
                 await axios.post(
-                    "http://localhost:5000/api/tasks",
+                    "https://team-task-manager-production-a903.up.railway.app/api/tasks",
                     {
                         title,
                         description,
@@ -131,7 +131,7 @@ function Tasks() {
         try {
 
             await axios.delete(
-                `http://localhost:5000/api/tasks/${id}`,
+                `https://team-task-manager-production-a903.up.railway.app/api/tasks/${id}`,
                 {
                     headers: {
                         authorization: token

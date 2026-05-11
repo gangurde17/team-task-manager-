@@ -121,7 +121,7 @@ function Projects() {
         try {
 
             await axios.delete(
-                `http://localhost:5000/api/projects/${id}`,
+                `https://team-task-manager-production-a903.up.railway.app/api/projects/${id}`,
                 {
                     headers: {
                         authorization: token
