@@ -26,7 +26,7 @@ function Projects() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/api/projects",
+                "https://team-task-manager-production-a903.up.railway.app/api/projects",
                 {
                     headers: {
                         authorization: token
@@ -62,7 +62,7 @@ function Projects() {
             if (editId) {
 
                 await axios.put(
-                    `http://localhost:5000/api/projects/${editId}`,
+                    `https://team-task-manager-production-a903.up.railway.app/api/projects/${editId}`,
                     {
                         title,
                         description
@@ -83,7 +83,7 @@ function Projects() {
             else {
 
                 await axios.post(
-                    "http://localhost:5000/api/projects",
+                    "https://team-task-manager-production-a903.up.railway.app/api/projects",
                     {
                         title,
                         description
